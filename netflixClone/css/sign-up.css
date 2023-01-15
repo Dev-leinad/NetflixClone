@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)),
+    url('/images/NG-en-20230103-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+}
+header{
+    padding:2rem;
+}
+ header .navbar-logo {
+    width: 150px;
+}
+
+header .navbar-logo img{
+ position: relative;
+ width: inherit; 
+}
+
+/* main section starts  */
+
+main {
+   min-height: 350px;
+    width:30%;
+    margin: auto;
+background-color: #000;
+    opacity: .6;
+    color: white;
+    border: 1px solid ;
+}
+
+main .form-container{
+    display: block;
+    padding: 1rem;
+   
+    
+}
+
+main .form-container form{
+    display: block;
+    width: 100%;
+     z-index: 999;
+}
+main .form-container form h2{
+    font-size: 2em;
+    padding: 1.3rem 1rem;
+}
+
+main .form-container form input, main .form-container form button {
+    width: 100%;
+    border-radius: 2px;
+    padding:8px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+}
+
+main .form-container form button {
+     background-color: #E50914;
+     color: #fff;
+     margin: 16px 2px;
+     padding: 12px;
+     border-radius: 4px;
+     font-size: 1.2em;
+     line-height: 12px;
+     z-index: 1000;
+}
+.connect{
+    display: flex;
+    padding: 6px;
+}
+.connect img{
+    width: 20px ;
+    height: 20px;
+}
+
+.connect p {
+    font-size: 16px;
+    align-self: center;
+}
+
+
+
+
+main .form-container form .form-cont {
+    display: flex;
+    align-items: center;
+}
+
+main .form-container form .form-cont input[type ='checkbox']{
+    width: 12px;
+    margin: 6px;
+    align-self: center;
+}
+
+main .form-container form .form-cont a{
+   color: #fff;
+   font-weight: 500;
+   text-decoration: none;
+   margin-left: 88px;
+
+}
+
+/* social-link */
+
+.social-link{
+    color: red;
+    font-size:20px ;
+    width: 20px ;
+    /* border: 2px solid green; */
+    padding: 8px;
+}
+
+
+/* footer styling */
+footer .footer-sect {
+    width: 70%;
+   height: 20vh;
+    margin:20px auto 0;
+    padding: 4px 3rem; 
+     color: #757575;
+}
+footer .footer-sect h3, p{
+  padding: .4rem 1.2rem;
+}
+footer .footer-sect .quick-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .footer-sect .quick-links .footer-box{
+    padding: .6rem;
+}
+
+footer .footer-sect .quick-links .footer-box button{
+    
+        width: 110px;
+        padding: .4em;
+        border:1px solid #808080;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        background: transparent;
+        z-index: 1000;
+    }
+
+footer .footer-sect .quick-links .footer-box ul li{
+    list-style: none;
+    margin: .5rem;
+}
+
+footer .footer-sect .quick-links .footer-box ul button{
+    margin-top: .5em;
+}
+
+
+
+
+
+
+
+
+
