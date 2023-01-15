@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000300;
+    font-size: 14px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.top-header{
+    height: 100vh; 
+    padding: 20px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0,0.7)),
+     url('/images/NG-en-20230103-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+}
+.top-header header .navbar-logo {
+    width: 150px;
+}
+
+.top-header header .navbar-logo img{
+ position: relative;
+ width: inherit; 
+}
+
+
+.top-header header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+.top-header header a.navbar-logo {
+    color: red;
+    font-size:2.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+font-family: 'poppins', sans-serif;
+text-decoration: none;
+}
+
+button{
+    width: 110px;
+    padding: .4em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+.lang-btn {
+    background-color: transparent;
+     color: #fff;
+     border: 1px solid ;
+}
+.lang-btn .fa-solid{
+    margin: .5em;
+    font-size: 1em;
+   
+}
+.sign-in-btn{
+    width: 80px;
+    font-size: 1em;
+    margin-left: .4em;
+    padding:.8em;
+    color: #fff;
+    background-color: red;
+}
+.top-header .hero-sect{
+    position: relative;
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    color: #fff;
+    z-index: 1000;
+}
+.top-header .hero-sect .hero-content {
+    position: relative;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.top-header .hero-sect .hero-content h2{
+    font-size: 64px;
+    font-weight: 600;
+    max-width: 750px;
+    margin-bottom: .3rem;
+    line-height: 1.2;
+}
+
+.top-header .hero-sect .hero-content p.watch{
+    font-size: 26px;
+    padding: 4px;
+    margin-bottom:.2rem;
+    letter-spacing: 1px;
+}
+
+
+.top-header .hero-sect .hero-content p.ready{
+    font-size: 1.2em;
+    padding: .5rem;
+    margin-bottom: 1px;
+}
+.top-header .hero-sect .hero-content .subscribeform {
+    position: relative;
+    margin-top:.5rem;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.top-header .hero-sect .hero-content .subscribeform input{
+    position: relative;
+    width: 65%;
+    flex: 1;
+    padding: 1em 0;
+    outline: none;
+    border: none;
+}
+.top-header .hero-sect .hero-content .subscribeform input::placeholder{
+    color: #000300;
+    font-size: .9em;
+    padding: .3em;
+}
+
+.top-header .hero-sect .hero-content .subscribeform button{
+    background-color: red;
+    color: #fff;
+    width: 125px;
+    padding: .9rem;
+}
+
+.top-header .hero-sect .hero-content .subscribeform button i.fa-chevron-right {
+    margin-left: .4rem;
+}
+
+/* main styling  */
+main{
+    width: 100%;
+    position: relative;
+
+}
+main .main-content{
+    padding: 50px 3rem;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: auto;
+}
+
+main .main-content .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+}
+main .main-content .row .content-col{
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+    font-family: 'poppins', sans-serif;
+    /* max-width: 450px; */
+}
+
+
+main .main-content .row .content-col h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+main .main-content .row .content-col p{
+    font-size: 1.1m;
+    width: 400px;
+}
+main .main-content .row .image-col{
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+}
+
+main .main-content .row .image-col img{
+    display: block;
+    width: 80%;
+}
+
+/* Faqs section styling */
+.faqs-section {
+    padding: 1.4rem;
+    text-align: center
+}
+
+.faqs-section .faq-container {
+    width: 60%;
+    margin: auto;
+}
+
+
+.faqs-section .faq-container  h2{
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 1em;
+    letter-spacing: 4px;
+}
+.faqs-section .faq-container .faqs-box{
+    position: relative;
+    margin: 16px;
+    width: 100%;
+    background-color: #303030;
+}
+
+.faqs-section .faq-container .faqs-box label{
+    display:flex;
+    padding: 1rem 3.2rem;
+    justify-content: space-between;
+    font-size:1.8rem;
+    font-weight: 600;
+    cursor :pointer;
+}
+
+.faqs-section .faq-container .faqs-box hr{
+    width: 95%;
+margin-left: 0;
+margin: auto;
+border: 1px solid grey;
+}
+
+.faqs-section .faq-container .faqs-box .faq-answers{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faqs-section .faq-container .faqs-box .content{
+    font-size: 1.4rem;
+    position: relative;
+    text-align: justify;
+    margin: 1px;
+    font-weight: 600;
+    padding: 26px;
+    /* overflow: hidden; */
+}
+
+/* Newletter section */
+.faqs-section .faq-container  .newsletter{
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+}
+.faqs-section .faq-container  .newsletter p{
+    font-size: 1.3em;
+    padding: 1rem;
+}
+.faqs-section .faq-container  .newsletter form{
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   margin-top: 20px;    
+    background-color: #fff;
+    overflow: hidden;
+
+}
+
+.faqs-section .faq-container  .newsletter form input{
+    position: relative;
+    flex: 1;
+    border: none ;
+    outline: none;
+    height: auto;
+    padding:0 2rem;
+}
+
+.faqs-section .faq-container  .newsletter form input::placeholder{
+    padding: 8px;
+    font-size: 1.2em;
+}
+
+.faqs-section .faq-container  .newsletter form button{
+    padding: 10px;
+    width: 200px;
+    background-color: #E50914;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+/* footer section */
+
+footer .footer-sect {
+    width: 70%;
+    min-height: 50vh;
+    margin: auto;
+    padding: 3rem; 
+     color: #757575;
+}
+footer .footer-sect h3, p{
+  padding: 1.2rem;
+}
+footer .footer-sect .quick-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+footer .footer-sect .quick-links .footer-box{
+    padding: 1.4rem;
+}
+footer .footer-sect .quick-links .footer-box ul li{
+    list-style: none;
+    margin: .5rem;
+}
+
+footer .footer-sect .quick-links .footer-box ul button{
+    margin-top: 1em;
+}
+
+
+/* media query styling */
+
+@media screen and (max-width :768px)  {
+    body{
+       
+    }
+    
+
+.top-header{
+    height: 70vh;
+}
+
+.top-header .hero-sect {
+    margin-top: 60px;
+}
+
+.top-header .hero-sect .hero-content h2{
+    font-size: 4em;
+    line-height: 60px;
+}
+.top-header .hero-sect .hero-content p.watch{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.top-header .hero-sect .hero-content p.ready {
+    font-size: 1.5em;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.top-header .hero-sect .hero-content .subscribeform {
+    display: block;
+}
+
+.top-header .hero-sect .hero-content .subscribeform form input{
+    width: 100%;
+    margin: 30px 0px;
+    padding: 22px;
+    border-radius: 4px;
+}
+.top-header .hero-sect .hero-content .subscribeform form input::placeholder{
+    font-size: 1.6em;
+}
+
+.top-header .hero-sect .hero-content .subscribeform form button{
+    width: 240px;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 1.6em;
+    border-radius: 4px;
+}
+
+/* main-section */
+
+.main-content .row .content-col,.main-content .row .image-col  {
+    flex-basis: 100%;
+}
+.main-content .row .content-col h2{
+    font-size: 200px ;
+    color: red;
+}
+
+.main-content .row .image-col img{
+    width: 100%;
+}
+
+}
+
+/* Profiles page styling */
+.main-conten

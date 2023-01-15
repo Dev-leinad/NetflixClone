@@ -1,0 +1,342 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    font-size: 14px;
+    font-family: 'poppins', sans-serif;
+    background-color: #141414;
+    color: white;
+}
+/* global css */
+li {
+    list-style:none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+/* header css */
+header {
+   height: 100px;
+    width: 100%;
+    position: relative;
+    display:flex;
+    justify-content: space-between; 
+    padding: 0px 20px;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+
+}
+header nav .navbar{
+    width: 150px;
+    position: relative;
+    padding: 12px;
+    align-self: center;
+}
+header nav .navbar a img{
+    width: 100%;
+}
+
+header nav  ul {
+    margin: 0 28px;
+    padding: 0;
+}
+
+header nav  ul li{
+    display: inline-block;
+    margin: 10px;
+    align-items: center;
+}
+
+header nav  ul li a{
+    color: #e5e5e5;
+}
+header .social-links {
+    padding: 20px;
+}
+header .social-links ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 26px;
+    align-items: center;
+}
+
+header .social-links ul li{
+    display: inline-block;
+    height: 100%;
+    padding: 16px 4px;
+}
+header .social-links ul li .prof-img{
+    width: 20px;
+    height: 20px;
+}
+header .social-links ul li .prof-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* hero section styling */
+
+main {
+    position: relative;
+    width  : 100%;
+
+}
+
+main .hero-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/homebg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: block; */
+}
+
+
+main .hero-section  .hero-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-left: 30px;
+}
+
+main .hero-section  .hero-container .hero-cont-img{
+    position: relative;
+    width: 200px;
+    padding: 7rem 16px 0  ;
+}
+
+main .hero-section  .hero-container .hero-cont-img img{
+    width: 100%;
+    
+}
+main .hero-section  .hero-container .hero-content {
+    display:inline-flex;
+}
+
+main .hero-section  .hero-container .hero-content img {
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin: 8px;
+}
+main .hero-section  .hero-container .hero-content h4{
+    font-size:1.2em;
+    margin: 10px 0;
+}
+
+main .hero-section  .hero-container article{
+    width: 550px;
+}
+
+main .hero-section  .hero-container article p {
+    font-size: 1.4rem;
+    letter-spacing: 1.1;
+    line-height: 30px;
+}
+
+main .hero-section  .hero-container .hero-btns button {
+    padding: 10px ;
+    font-size: 16px;
+    margin: 10px 10px 10px 0;
+    border-radius: 4px;
+    background-color: rgb(214, 208, 208);
+    
+}
+main .hero-section  .hero-container .hero-btns button:first-child{
+    width: 130px;
+    font-weight: 600;
+}
+
+main .hero-section  .hero-container .hero-btns button:nth-child(2){
+    opacity: .5;
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    color: white;
+}
+main .hero-section  .hero-container .hero-btns button .fa {
+    margin: 8px;
+    /* padding: 4px; */
+}
+
+main .hero-section  .hero-container .hero-popular-cont{
+    display: inline-block;
+    width: 100%;
+}
+
+main .hero-section  .hero-container .hero-popular-cont h2{
+    font-size: 1.2em;
+    padding: .3rem;
+}
+
+.popular-movies{
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+ .popular-movies .movie-box{
+    height: 150px;
+}
+
+.popular-movies .movie-box img{
+    width: 100%;
+}
+ .popular-movies  .dir-icons {
+    position: absolute;
+    font-size: 40px;
+    color: #e5e5e5 ;
+    z-index: 1000;
+     top: 4rem;
+}
+ .popular-movies .prev-btn{
+    left: 30px;
+    display: none;
+   
+}
+.popular-movies .next-btn {
+    right: 30px;
+}
+
+/* popular movies-container section styling */
+
+section.popular-movie-container{
+    width: 100%;
+    padding-left: 28px;
+}
+
+.top-movies h2{
+    font-size: 1.4em;
+    padding: 20px 0;
+}
+
+/* most-rated section */
+
+.most-rated {
+    padding-left: 28px;
+    width: 100%;
+    position: relative;
+
+}
+
+.most-rated h3{
+    font-size: 20px;
+    font-weight: 500;
+    
+    padding: 18px 0px;
+    font-family: 'poppins', sans-serif;
+}
+
+.rated-movies-box{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.most-rated .rated-movies-box  .rated-movies{
+    width: 300px;
+    height: 400px;
+    position: relative;
+}  
+
+
+.most-rated .rated-movies-box  .rated-movies img{
+    width: 100%;
+    height: 100%;
+}
+
+.rated-movies-box .dir-icons{
+
+    position: absolute;
+    font-size: 3em;
+    color: #e6dcdc;
+    top: 12rem;
+}
+
+.rated-movies-box .prev-btn {
+    display: none;
+    left: 40px;
+}
+
+
+.rated-movies-box .next-btn {
+    right:40px ;
+}
+
+/* Top ten Section styling */
+
+.top-ten-section {
+    width: 100%;
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.top-ten-section h3{
+    font-size: 22px ;
+    color: #e5e5e5;
+    padding: 20px 30px;
+    font-weight: 500;
+}
+
+
+.top-ten-section .top-ten-container {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-left: 48px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    padding-left: 20px 0px  0px 50px;
+}
+
+.top-ten-section .top-ten-container .top-ten-details {
+    width: 500px;
+     overflow: hidden;
+     position: relative;
+    display: flex;
+    padding-left: 10px;
+    margin-left: 6px;
+}
+
+.top-ten-section .top-ten-container .dir-icons {
+    position: absolute;
+    top: 10rem;
+    font-size: 3rem;
+
+}
+
+.top-ten-section .top-ten-container .prev-btn {
+    left: 40px;
+    display: none;
+}
+
+.top-ten-section .top-ten-container .next-btn{
+    right: 40px;
+}
+.top-ten-section .top-ten-container .top-ten-details img {
+margin-left: -10px;
+}
+
+
+
+
+
+
